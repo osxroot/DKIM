@@ -206,10 +206,10 @@ tagLvl() {
             reLoad()
 }
 
-createKey () {
+createKey() {
 
             echo "Enter your domain (i.e. example.com) : "; read domain;
-            IFS=. read myDomain tLd <<< $domain
+            IFS=. read myDomain tLd <<< $domain;
 
             mkdir -p /var/db/dkim
             chown _amavisd /var/db/dkim
